@@ -3,8 +3,7 @@
 
 # Site settings
 title: Giveth
-description: |
-  Charitable giving on the blockchain
+description: |Charitable giving on the blockchain
 owner: Giveth # or company name
 first_published: 2017 # if migrating another site, the year of your first publish
 email: hi@giveth.io
