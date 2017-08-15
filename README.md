@@ -2,7 +2,7 @@
 Prototyping a landing page using Netlify CMS, Bootstrap 4 and built by Jekyll
 
 ## Build process
-* Created from ´´´jekyll new´´´
+* Created from ```jekyll new```
 * added Netlify CMS in /admin/
 * added Bootstrap 4 via CDN
 
