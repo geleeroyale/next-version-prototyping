@@ -4,7 +4,7 @@ backend:
   branch:  next-version-prototyping # Branch to update
 
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
-public_folder: "_site/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+# public_folder: "_site/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
