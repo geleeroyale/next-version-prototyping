@@ -1,0 +1,64 @@
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: Giveth
+description: |
+  Charitable giving on the blockchain
+owner: Giveth # or company name
+first_published: 2017 # if migrating another site, the year of your first publish
+email: hi@giveth.io
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://giveth.io" # the base hostname & protocol for your site
+theme:
+social:
+  slack: http://slack.giveth.io
+  twitter: https://twitter.com/givethio
+  github: https://github.com/giveth
+  # github: https://medium.com/giveth/the-minime-token-open-sourced-by-giveth-2710c0210787
+  # github: https://medium.com/giveth/the-vault-contract-open-sourced-by-giveth-fe2261f7b91b
+  facebook-official: https://facebook.com/givethio
+  # googe-plus-square: https://plus.google.com/u/0/+<username>
+  #email: /contact/
+  #flickr:
+  #instagram:
+  youtube-square: https://www.youtube.com/watch?v=VaIbmxk2eio&list=PL4Artm1rmCWGyz-BWv1-8Ip26XIauCLo9
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
+
+# Build settings
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+sass:
+    sass_dir: _sass
+#sass:
+#  style: compressed

@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: Giveth/giveth-landing-page # Path to your Github repository
+  branch:  next-version-prototyping # Branch to update
