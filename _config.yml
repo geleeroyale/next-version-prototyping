@@ -10,7 +10,7 @@ first_published: 2017 # if migrating another site, the year of your first publis
 email: hi@giveth.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://giveth.io" # the base hostname & protocol for your site
-theme:
+theme: minima
 social:
   slack: http://slack.giveth.io
   twitter: https://twitter.com/givethio
@@ -60,5 +60,4 @@ kramdown:
   parse_block_html: true
 sass:
     sass_dir: _sass
-#sass:
-#  style: compressed
+    style: compressed
