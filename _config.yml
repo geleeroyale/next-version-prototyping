@@ -61,3 +61,7 @@ sass:
     sass_dir: _sass
 #  style: compressed
 permalink: /:categories/:title
+
+collections:
+  blog:
+    output: true
