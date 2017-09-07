@@ -1,5 +1,5 @@
-<header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header id="header"{% if page.layout == 'landing' %} {% endif %}>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand logo-font" href="#">Giveth.io</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -17,6 +17,9 @@
         <a class="nav-link" href="#smart-contracts">Smart Contracts</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="http://mvp.giveth.io">Dapp preview</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="http://dapp.giveth.io">Milestonetracker</a>
       </li>
       <li class="nav-item">
@@ -25,4 +28,3 @@
     </ul>
   </div>
 </nav>
-</header>
