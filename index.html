@@ -3,17 +3,50 @@ layout: landing
 ---
 <main class="container-fluid">
 
-<section id="hero" class="container-fluid cover-section">
+<section id="hero" class="container-fluid justify-content-center cover-section">
   <div class="row d-flex">
-    <div class="col justify-content-center text-align-center">
+    <div class="col">
       <h1 class="p-2">
           Giveth</h1>
-      <h2 class="p-2">
-          Building Altrucistic Communities around Causes</h2>
+      <h2 class="p-2 ">
+          Building Altruistic Communities around Causes</h2>
       <h3 class="p-2">
           with Blockchain technology</h3>
-      <p class="p-2">
-          Join us on</p>
+      <ul class="col d-flex justify-content-center hide-list-style">
+
+            {% if site.slack %}
+              <li>
+                <a href="{{ site.slack }}"><i class="fa fa-slack"></i></a>
+              </li>
+            {% endif %}
+
+            {% if site.twitter_username %}
+              <li>
+                <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+              </li>
+            {% endif %}
+
+            {% if site.github_username %}
+              <li>
+                  <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+              </li>
+            {% endif %}
+
+            {% if site.facebook_username %}
+              <li>
+                  <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
+              </li>
+            {% endif %}
+
+            {% if site.youtube %}
+              <li>
+                  <a href="{{ site.youtube }}"><i class="fa fa-youtube"></i></a>
+              </li>
+            {% endif %}
+
+      </ul>
+      <p class="p-2 padding-top">
+          Join the discussion on</p>
       <a href="http://slack.giveth.io" class="p-2 btn btn-primary align-self-center">
           Slack</a>
     </div>

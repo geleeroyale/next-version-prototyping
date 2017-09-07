@@ -1,53 +1,72 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-// imported from Bootstrap4 + Jekyll: https://github.com/jenofdoom/jekyll-bootstrap-4
 
 @charset 'utf-8';
 @import 'custom'; // variables for bootstrap
 @import 'bootstrap';
 
-$z-index-navbar: 10;
-$footer-height: 60px;
-
-body {
-  margin-bottom: $footer-height;
-  $body-bg:       $white !default;
-  $body-color:    $gray-900 !default;
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
 }
 
-.site-header {
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: $z-index-navbar;
+h1, .logo-font {
+font-family: 'Exo', sans-serif !important;
+font-weight: 600;
 }
 
-body > .site-header + .container {
-  padding: 60px 15px 0;
+.hide-list-style {
+  list-style: none;
 }
 
-.container {
-  max-width: 720px;
+.background {
+  background-image: url("/images/banner.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
 }
 
-.site-footer {
-  background-color: $gray-100;
-  bottom: 0;
-  height: $footer-height;
-  line-height: 60px;
-  position: absolute;
-  width: 100%;
-
-  ul {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-
-    > li {
-      display: inline-block;
-      list-style-type: none;
-    }
-  }
+.container-fluid {
+  max-width: 1200px;
 }
+
+.fa {
+  font-size: 2rem;
+}
+
+#hero ul {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#hero li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#footer li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.padding-top {
+  padding-top: 2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.cover-section {
+  min-height: 100vh;
+  padding-top: 30vh;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+/*
+* {
+   outline: 1px solid red !important;
+}
+*/

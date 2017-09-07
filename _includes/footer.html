@@ -1,18 +1,38 @@
 <footer id="footer" class="container-fluid">
-  <ul class="d-flex icon justify-content-around">
-    {% for socloc in site.social %}
-    {% if socloc[1] %}
-    {% if socloc[0] == 'email' %}
-    <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-envelope-o"
-           ><span class="label">E-mail</span></a></li>
-    {% else %}
-    <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-{{ socloc[0] }}"
-           ><span class="label">{{ socloc[0] }}</span></a></li>
+  <ul class="col d-flex justify-content-center hide-list-style">
+
+    {% if site.slack %}
+      <li>
+        <a href="{{ site.slack }}"><i class="fa fa-slack"></i></a>
+      </li>
     {% endif %}
+
+    {% if site.twitter_username %}
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+      </li>
     {% endif %}
-    {% endfor %}
+
+    {% if site.github_username %}
+      <li>
+          <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.facebook_username %}
+      <li>
+          <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.youtube %}
+      <li>
+          <a href="{{ site.youtube }}"><i class="fa fa-youtube"></i></a>
+      </li>
+    {% endif %}
+
   </ul>
-  <ul class="copyright">
+  <ul class="hide-list-style text-align-center">
     <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
     {% if site.first_published %}
       {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
