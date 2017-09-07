@@ -20,15 +20,47 @@ h1, .logo-font {
 h2, h3, h4, h5, h6 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
-.headline {
-  font-size: 10rem;
+#footer {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+
+  li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
-.hide-list-style {
-  list-style: none;
+#section1, #section2 {
+  text-align: justify;
 }
+
+#hero {
+  ul {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+ #smart-contracts {
+   p {
+     text-align: justify;
+   }
+
+   li {
+     text-align: justify;
+     list-style: none;
+     padding: 0.5rem;
+   }
+ }
+
 
 .background {
   background-image: url("/images/banner.jpg");
@@ -41,40 +73,54 @@ h2, h3, h4, h5, h6 {
   max-width: 1200px;
 }
 
+.cover-section {
+  min-height: 100vh;
+  padding-top: 25vh;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
 .fa {
   font-size: 2rem;
 }
 
-#hero ul {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.headline {
+  font-size: 8rem;
 }
 
-#hero li {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-#footer li {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.hide-list-style {
+  list-style: none;
 }
 
 .padding-top {
   padding-top: 2rem;
 }
 
+.padding-bottom {
+  padding-bottom: 2rem;
+}
+
+
 .text-align-center {
   text-align: center;
 }
 
-.cover-section {
-  min-height: 100vh;
-  padding-top: 30vh;
-  padding-bottom: 40px;
-  text-align: center;
+.features {
+		list-style: none;
+		padding: 0;
+		width: 100%;
+
+		li {
+			display: block;
+			position: relative;
+			text-align: justify;
+			width: 50%;
+      flex-wrap: wrap;
+    }
 }
 
+// Safari flexbox bug
+.col { border: 1px solid transparent; }
 /*
 * {
    outline: 1px solid red !important;

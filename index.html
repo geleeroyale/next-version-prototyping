@@ -53,7 +53,7 @@ layout: landing
   </div>
 </section>
 
-<div class="container-fluid">
+<div id="section1" class="container-fluid">
     <h2>TRANSPARENT DONATION FLOW WITH ETHEREUM</h2>
     <p>
       Giveth is a completely free and open source platform, that will enable
@@ -69,17 +69,17 @@ layout: landing
       what it **accomplished** and most important: Know the **details** of the whole process!
     </p>
 </div>
-<div class="container-fluid">
+<div id="section2" class="container-fluid">
     <h2>Creating Altruistic Communities</h2>
     <p><quote>
         "Anyone can create a cause on anything they feel strongly about supporting.
         Whether it is solar energy to impoverished    area, or organizing a recycling campaign, they can use the Giveth platform
         to find other people that share their excitement.  Giveth encourage organized efforts
         and shared resources to tackle global and local problems together. The main goal is to cultivate connections
-        that build strong communities upon a solid foundation of transparency and accountabilitypowered by blockchain tech.""
+        that build strong communities upon a solid foundation of transparency and accountabilitypowered by blockchain tech."
     </quote></p>
 </div>
-<div class="container-fluid">
+<div id="section2" class="container-fluid">
     <h2>Connecting and Rewarding</h2>
     <p>"Every donation is an opportunity
         to build a connection between like minded individuals, all those who are making it happen.
@@ -100,9 +100,13 @@ layout: landing
         as 'Makers' are rewarded on a milestone basis."
     </p>
 </div>
-<div class="container-fluid" id="smart-contracts">
-    <h2>Transparent Innovation</h2>
-    <p>"Giveth will revolutionize donation giving
+<section id="smart-contracts" class="container-fluid">
+  <div class="col">
+    <div class ="row d-flex justify-content-center">
+      <h2>Transparent Innovation</h2>
+    </div>
+    <div class ="row d-flex">
+      <p>"Giveth will revolutionize donation giving
         by fusing smart contract governance systems,
         and peer to peer community building
         on social media platforms.
@@ -115,41 +119,48 @@ layout: landing
         like building incentive structures for independent reviewers to verify the completion of milestones,
         or Rewarding Volunteers with tokens, badges or even ether
         to keep them engaged with the Cause and the Community."
-    </p>
-</div>
-<div class="container-fluid">
-  <div class="container-fluid">
-    <h2>Minime</h2>
-    <p>The MiniMe token makes it trivial for ANYONE to upgrade a Dapp/DAO
-      midstream to include new features in a decentralized fashion, without
-      having to migrate to a new token contract and without having to ask for
-      permission.
-    </p>
+      </p>
+    </div>
+    <div class="row d-flex justify-content-center padding-top">
+      <a href="http://github.com/Giveth/" class="btn btn-success">Giveth on Github</a>
+    </div>
   </div>
-  <div class="container-fluid">
-    <h2>Vault</h2>
-    <p>The Vault Contract is designed to hold ether and safely automate payments
-       in a Dapp/DAO environment. It allows for a step-by-step decentralization
-       process as trust in the code base is built over time.
-    </p>
-  </div>
-  <div class="container-fluid">
-    <h2>Delegated Governance</h2>
-    <p>One of Giveth core contracts we are working on enables a donor to
-      delegate authority over their donations in a simple gas efficient way,
-      following the principles of liquid democracy.
-    </p>
-  </div>
-  <div class="container-fluid">
-    <h2>Milestone Payouts</h2>
-    <p>Our milestone contracts once fully tested and they are able to keep
-      organizations and causes accountable to their supporters. Breaking down
-      lump sum amounts and ensuring milestones completion is an approach that
-      would help all types of organizations (for profit or non-profits) as well
-      as the current ICO ecosystem by reassuring that contributed funds are
-      well spent.
-    </p>
-  </div>
-</div>
+      <div class="col d-flex padding-top">
+            <ul class="row d-flex mr-auto features">
+              <li>
+                <h4>Minime</h4>
+                <p>The MiniMe token makes it trivial for ANYONE to upgrade a Dapp/DAO
+                  midstream to include new features in a decentralized fashion, without
+                  having to migrate to a new token contract and without having to ask for
+                  permission.
+                </p>
+              </li>
+              <li>
+                <h4>Vault</h4>
+                <p>The Vault Contract is designed to hold ether and safely automate payments
+                   in a Dapp/DAO environment. It allows for a step-by-step decentralization
+                   process as trust in the code base is built over time.
+                </p>
+              </li>
+              <li>
+                <h4>Delegated Governance</h4>
+                <p>One of Giveth core contracts we are working on enables a donor to
+                  delegate authority over their donations in a simple gas efficient way,
+                  following the principles of liquid democracy.
+                </p>
+              </li>
+              <li>
+                <h4>Milestone Payouts</h4>
+                <p>Our milestone contracts once fully tested and they are able to keep
+                  organizations and causes accountable to their supporters. Breaking down
+                  lump sum amounts and ensuring milestones completion is an approach that
+                  would help all types of organizations (for profit or non-profits) as well
+                  as the current ICO ecosystem by reassuring that contributed funds are
+                  well spent.
+                </p>
+              </li>
+            </ul>
+      </div>
+</section>
 
 </main>
