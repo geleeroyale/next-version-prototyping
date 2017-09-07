@@ -7,13 +7,23 @@
 @import 'bootstrap';
 
 * {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 h1, .logo-font {
-font-family: 'Exo', sans-serif !important;
-font-weight: 600;
+  font-family: 'Exo', sans-serif !important;
+  font-weight: 600;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.headline {
+  font-size: 10rem;
 }
 
 .hide-list-style {
