@@ -2,13 +2,11 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@charset 'utf-8';
-@import 'custom'; // variables for bootstrap
-@import 'bootstrap';
+
 
 * {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -23,6 +21,23 @@ h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+main {
+  background-color: white;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  z-index: -1;
+}
+
+body {
+
+  background-image: url(../images/text-test.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+}
+
 #footer {
   padding-top: 4rem;
   padding-bottom: 2rem;
@@ -31,10 +46,6 @@ h2, h3, h4, h5, h6 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-#section1, #section2 {
-  text-align: justify;
 }
 
 #hero {
@@ -49,6 +60,10 @@ h2, h3, h4, h5, h6 {
   }
 }
 
+#section1, #section2 {
+  text-align: justify;
+}
+
 #smart-contracts {
    p {
      text-align: justify;
@@ -61,28 +76,82 @@ h2, h3, h4, h5, h6 {
    }
  }
 
-
+/*
 .background {
   background-image: url("/images/banner.jpg");
   background-repeat: no-repeat;
   position: relative;
-  z-index: 0;
+}
+*/
+
+.background-white {
+  background-color: white;
+  opacity: 0.9;
 }
 
+.background-light-grey {
+  background-color: #d2d2d2;
+}
+
+.background-dark-grey {
+  background-color: #787878;
+}
+
+// Safari flexbox bug workaround
+.col { border: 1px solid transparent; }
+
 .container-fluid {
-  max-width: 1200px;
+  // max-width: 1200px;
   justify-content: center;
 }
 
+.copyright {
+  color: white;
+}
+
 .cover-section {
+  padding-left: 0px;
+  padding-right: 0px;
   min-height: 100vh;
-  padding-top: 25vh;
   padding-bottom: 40px;
   text-align: center;
+  .white-bg {
+    background-color: white;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+  }
 }
 
 .fa {
   font-size: 2rem;
+  color: white;
+}
+
+
+.features {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+
+  li {
+    display: block;
+    flex: 1 20%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 920px) {
+  .features li {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  .features li {
+    min-width: 90%;
+  }
 }
 
 .headline {
@@ -91,6 +160,14 @@ h2, h3, h4, h5, h6 {
 
 .hide-list-style {
   list-style: none;
+}
+
+.logo-image {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  margin: 0px;
+  padding: 0px;
+
 }
 
 .padding-top {
@@ -106,35 +183,9 @@ h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.features {
-    display: flex;
-    list-style: none;
-		padding: 0;
-		width: 100%;
-    flex-wrap: wrap;
 
-		li {
-      display: block;
-      flex: 1 20%;
-      text-align: justify;
-    }
-}
-
-@media (max-width: 920px) {
-  .features li {
-    min-width: 50%;
-  }
-}
-
-@media (max-width: 650px) {
-  .features li {
-    min-width: 90%;
-  }
-}
-
-// Safari flexbox bug workaround
-.col { border: 1px solid transparent; }
-
+/*
 * {
    outline: 1px solid red !important;
 }
+*/
