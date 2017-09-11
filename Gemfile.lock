@@ -11,6 +11,7 @@ GEM
       sass (>= 3.4.19)
     colorator (1.1.0)
     execjs (2.7.0)
+    ffi (1.9.18)
     ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.5.1)
@@ -59,6 +60,7 @@ GEM
       tzinfo (>= 1.0.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
