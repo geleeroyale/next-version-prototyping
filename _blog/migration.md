@@ -69,3 +69,4 @@ Direct link to join Slack community - http://slack.giveth.io
 If you run into any problems, or need to ask a question, find me on Riot
 
 @geleeroyale:matrix.org
+
